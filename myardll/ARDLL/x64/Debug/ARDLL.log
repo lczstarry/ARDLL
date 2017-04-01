@@ -1,0 +1,242 @@
+﻿生成启动时间为 2016/12/28 18:15:26。
+     1>项目“C:\Users\DELL\Documents\Visual Studio 2013\Projects\ARDLL\ARDLL\ARDLL.vcxproj”在节点 2 上(Rebuild 个目标)。
+     1>ClCompile:
+         E:\visual studio 2013 破解版\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /sdl /Od /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D ARDLL_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /Gd /TP /errorReport:prompt ARPipeline.cpp CameraCalibration.cpp GeometryTypes.cpp maintest.cpp Pattern.cpp PatternDetector.cpp
+         PatternDetector.cpp
+     1>c:\users\dell\documents\visual studio 2013\projects\ardll\ardll\CameraCalibration.hpp(52): warning C4251: “CameraCalibration::m_intrinsic”: class“cv::Matx<float,3,3>”需要有 dll 接口由 class“CameraCalibration”的客户端使用
+     1>c:\users\dell\documents\visual studio 2013\projects\ardll\ardll\CameraCalibration.hpp(53): warning C4251: “CameraCalibration::m_distortion”: class“cv::Mat_<float>”需要有 dll 接口由 class“CameraCalibration”的客户端使用
+     1>c:\users\dell\documents\visual studio 2013\projects\ardll\ardll\Pattern.hpp(32): warning C4251: “Pattern::size”: class“cv::Size_<int>”需要有 dll 接口由 struct“Pattern”的客户端使用
+     1>c:\users\dell\documents\visual studio 2013\projects\ardll\ardll\Pattern.hpp(33): warning C4251: “Pattern::frame”: class“cv::Mat”需要有 dll 接口由 struct“Pattern”的客户端使用
+                 F:\opencv\build\include\opencv2/core/core.hpp(1690) : 参见“cv::Mat”的声明
+     1>c:\users\dell\documents\visual studio 2013\projects\ardll\ardll\Pattern.hpp(34): warning C4251: “Pattern::grayImg”: class“cv::Mat”需要有 dll 接口由 struct“Pattern”的客户端使用
+                 F:\opencv\build\include\opencv2/core/core.hpp(1690) : 参见“cv::Mat”的声明
+     1>c:\users\dell\documents\visual studio 2013\projects\ardll\ardll\Pattern.hpp(36): warning C4251: “Pattern::keypoints”: class“std::vector<cv::KeyPoint,std::allocator<_Ty>>”需要有 dll 接口由 struct“Pattern”的客户端使用
+                 with
+                 [
+                     _Ty=cv::KeyPoint
+                 ]
+     1>c:\users\dell\documents\visual studio 2013\projects\ardll\ardll\Pattern.hpp(37): warning C4251: “Pattern::descriptors”: class“cv::Mat”需要有 dll 接口由 struct“Pattern”的客户端使用
+                 F:\opencv\build\include\opencv2/core/core.hpp(1690) : 参见“cv::Mat”的声明
+     1>c:\users\dell\documents\visual studio 2013\projects\ardll\ardll\Pattern.hpp(39): warning C4251: “Pattern::points2d”: class“std::vector<cv::Point2f,std::allocator<_Ty>>”需要有 dll 接口由 struct“Pattern”的客户端使用
+                 with
+                 [
+                     _Ty=cv::Point2f
+                 ]
+     1>c:\users\dell\documents\visual studio 2013\projects\ardll\ardll\Pattern.hpp(40): warning C4251: “Pattern::points3d”: class“std::vector<cv::Point3f,std::allocator<_Ty>>”需要有 dll 接口由 struct“Pattern”的客户端使用
+                 with
+                 [
+                     _Ty=cv::Point3f
+                 ]
+     1>c:\users\dell\documents\visual studio 2013\projects\ardll\ardll\Pattern.hpp(48): warning C4251: “PatternTrackingInfo::homography”: class“cv::Mat”需要有 dll 接口由 struct“PatternTrackingInfo”的客户端使用
+                 F:\opencv\build\include\opencv2/core/core.hpp(1690) : 参见“cv::Mat”的声明
+     1>c:\users\dell\documents\visual studio 2013\projects\ardll\ardll\Pattern.hpp(49): warning C4251: “PatternTrackingInfo::points2d”: class“std::vector<cv::Point2f,std::allocator<_Ty>>”需要有 dll 接口由 struct“PatternTrackingInfo”的客户端使用
+                 with
+                 [
+                     _Ty=cv::Point2f
+                 ]
+     1>c:\users\dell\documents\visual studio 2013\projects\ardll\ardll\PatternDetector.hpp(86): warning C4251: “PatternDetector::m_queryKeypoints”: class“std::vector<cv::KeyPoint,std::allocator<_Ty>>”需要有 dll 接口由 class“PatternDetector”的客户端使用
+                 with
+                 [
+                     _Ty=cv::KeyPoint
+                 ]
+     1>c:\users\dell\documents\visual studio 2013\projects\ardll\ardll\PatternDetector.hpp(87): warning C4251: “PatternDetector::m_queryDescriptors”: class“cv::Mat”需要有 dll 接口由 class“PatternDetector”的客户端使用
+                 F:\opencv\build\include\opencv2/core/core.hpp(1690) : 参见“cv::Mat”的声明
+     1>c:\users\dell\documents\visual studio 2013\projects\ardll\ardll\PatternDetector.hpp(88): warning C4251: “PatternDetector::m_matches”: class“std::vector<cv::DMatch,std::allocator<_Ty>>”需要有 dll 接口由 class“PatternDetector”的客户端使用
+                 with
+                 [
+                     _Ty=cv::DMatch
+                 ]
+     1>c:\users\dell\documents\visual studio 2013\projects\ardll\ardll\PatternDetector.hpp(89): warning C4251: “PatternDetector::m_knnMatches”: class“std::vector<std::vector<cv::DMatch,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>”需要有 dll 接口由 class“PatternDetector”的客户端使用
+                 with
+                 [
+                     _Ty=cv::DMatch
+                 ]
+     1>c:\users\dell\documents\visual studio 2013\projects\ardll\ardll\PatternDetector.hpp(91): warning C4251: “PatternDetector::m_grayImg”: class“cv::Mat”需要有 dll 接口由 class“PatternDetector”的客户端使用
+                 F:\opencv\build\include\opencv2/core/core.hpp(1690) : 参见“cv::Mat”的声明
+     1>c:\users\dell\documents\visual studio 2013\projects\ardll\ardll\PatternDetector.hpp(92): warning C4251: “PatternDetector::m_warpedImg”: class“cv::Mat”需要有 dll 接口由 class“PatternDetector”的客户端使用
+                 F:\opencv\build\include\opencv2/core/core.hpp(1690) : 参见“cv::Mat”的声明
+     1>c:\users\dell\documents\visual studio 2013\projects\ardll\ardll\PatternDetector.hpp(93): warning C4251: “PatternDetector::m_roughHomography”: class“cv::Mat”需要有 dll 接口由 class“PatternDetector”的客户端使用
+                 F:\opencv\build\include\opencv2/core/core.hpp(1690) : 参见“cv::Mat”的声明
+     1>c:\users\dell\documents\visual studio 2013\projects\ardll\ardll\PatternDetector.hpp(94): warning C4251: “PatternDetector::m_refinedHomography”: class“cv::Mat”需要有 dll 接口由 class“PatternDetector”的客户端使用
+                 F:\opencv\build\include\opencv2/core/core.hpp(1690) : 参见“cv::Mat”的声明
+     1>c:\users\dell\documents\visual studio 2013\projects\ardll\ardll\PatternDetector.hpp(97): warning C4251: “PatternDetector::m_detector”: class“cv::Ptr<cv::FeatureDetector>”需要有 dll 接口由 class“PatternDetector”的客户端使用
+     1>c:\users\dell\documents\visual studio 2013\projects\ardll\ardll\PatternDetector.hpp(98): warning C4251: “PatternDetector::m_extractor”: class“cv::Ptr<cv::DescriptorExtractor>”需要有 dll 接口由 class“PatternDetector”的客户端使用
+     1>c:\users\dell\documents\visual studio 2013\projects\ardll\ardll\PatternDetector.hpp(99): warning C4251: “PatternDetector::m_matcher”: class“cv::Ptr<cv::DescriptorMatcher>”需要有 dll 接口由 class“PatternDetector”的客户端使用
+     1>PatternDetector.cpp(63): warning C4244: “初始化”: 从“const int”转换到“const float”，可能丢失数据
+     1>PatternDetector.cpp(64): warning C4244: “初始化”: 从“const int”转换到“const float”，可能丢失数据
+         Pattern.cpp
+     1>c:\users\dell\documents\visual studio 2013\projects\ardll\ardll\CameraCalibration.hpp(52): warning C4251: “CameraCalibration::m_intrinsic”: class“cv::Matx<float,3,3>”需要有 dll 接口由 class“CameraCalibration”的客户端使用
+     1>c:\users\dell\documents\visual studio 2013\projects\ardll\ardll\CameraCalibration.hpp(53): warning C4251: “CameraCalibration::m_distortion”: class“cv::Mat_<float>”需要有 dll 接口由 class“CameraCalibration”的客户端使用
+     1>c:\users\dell\documents\visual studio 2013\projects\ardll\ardll\Pattern.hpp(32): warning C4251: “Pattern::size”: class“cv::Size_<int>”需要有 dll 接口由 struct“Pattern”的客户端使用
+     1>c:\users\dell\documents\visual studio 2013\projects\ardll\ardll\Pattern.hpp(33): warning C4251: “Pattern::frame”: class“cv::Mat”需要有 dll 接口由 struct“Pattern”的客户端使用
+                 F:\opencv\build\include\opencv2/core/core.hpp(1690) : 参见“cv::Mat”的声明
+     1>c:\users\dell\documents\visual studio 2013\projects\ardll\ardll\Pattern.hpp(34): warning C4251: “Pattern::grayImg”: class“cv::Mat”需要有 dll 接口由 struct“Pattern”的客户端使用
+                 F:\opencv\build\include\opencv2/core/core.hpp(1690) : 参见“cv::Mat”的声明
+     1>c:\users\dell\documents\visual studio 2013\projects\ardll\ardll\Pattern.hpp(36): warning C4251: “Pattern::keypoints”: class“std::vector<cv::KeyPoint,std::allocator<_Ty>>”需要有 dll 接口由 struct“Pattern”的客户端使用
+                 with
+                 [
+                     _Ty=cv::KeyPoint
+                 ]
+     1>c:\users\dell\documents\visual studio 2013\projects\ardll\ardll\Pattern.hpp(37): warning C4251: “Pattern::descriptors”: class“cv::Mat”需要有 dll 接口由 struct“Pattern”的客户端使用
+                 F:\opencv\build\include\opencv2/core/core.hpp(1690) : 参见“cv::Mat”的声明
+     1>c:\users\dell\documents\visual studio 2013\projects\ardll\ardll\Pattern.hpp(39): warning C4251: “Pattern::points2d”: class“std::vector<cv::Point2f,std::allocator<_Ty>>”需要有 dll 接口由 struct“Pattern”的客户端使用
+                 with
+                 [
+                     _Ty=cv::Point2f
+                 ]
+     1>c:\users\dell\documents\visual studio 2013\projects\ardll\ardll\Pattern.hpp(40): warning C4251: “Pattern::points3d”: class“std::vector<cv::Point3f,std::allocator<_Ty>>”需要有 dll 接口由 struct“Pattern”的客户端使用
+                 with
+                 [
+                     _Ty=cv::Point3f
+                 ]
+     1>c:\users\dell\documents\visual studio 2013\projects\ardll\ardll\Pattern.hpp(48): warning C4251: “PatternTrackingInfo::homography”: class“cv::Mat”需要有 dll 接口由 struct“PatternTrackingInfo”的客户端使用
+                 F:\opencv\build\include\opencv2/core/core.hpp(1690) : 参见“cv::Mat”的声明
+     1>c:\users\dell\documents\visual studio 2013\projects\ardll\ardll\Pattern.hpp(49): warning C4251: “PatternTrackingInfo::points2d”: class“std::vector<cv::Point2f,std::allocator<_Ty>>”需要有 dll 接口由 struct“PatternTrackingInfo”的客户端使用
+                 with
+                 [
+                     _Ty=cv::Point2f
+                 ]
+         maintest.cpp
+     1>c:\users\dell\documents\visual studio 2013\projects\ardll\ardll\CameraCalibration.hpp(52): warning C4251: “CameraCalibration::m_intrinsic”: class“cv::Matx<float,3,3>”需要有 dll 接口由 class“CameraCalibration”的客户端使用
+     1>c:\users\dell\documents\visual studio 2013\projects\ardll\ardll\CameraCalibration.hpp(53): warning C4251: “CameraCalibration::m_distortion”: class“cv::Mat_<float>”需要有 dll 接口由 class“CameraCalibration”的客户端使用
+     1>c:\users\dell\documents\visual studio 2013\projects\ardll\ardll\Pattern.hpp(32): warning C4251: “Pattern::size”: class“cv::Size_<int>”需要有 dll 接口由 struct“Pattern”的客户端使用
+     1>c:\users\dell\documents\visual studio 2013\projects\ardll\ardll\Pattern.hpp(33): warning C4251: “Pattern::frame”: class“cv::Mat”需要有 dll 接口由 struct“Pattern”的客户端使用
+                 F:\opencv\build\include\opencv2/core/core.hpp(1690) : 参见“cv::Mat”的声明
+     1>c:\users\dell\documents\visual studio 2013\projects\ardll\ardll\Pattern.hpp(34): warning C4251: “Pattern::grayImg”: class“cv::Mat”需要有 dll 接口由 struct“Pattern”的客户端使用
+                 F:\opencv\build\include\opencv2/core/core.hpp(1690) : 参见“cv::Mat”的声明
+     1>c:\users\dell\documents\visual studio 2013\projects\ardll\ardll\Pattern.hpp(36): warning C4251: “Pattern::keypoints”: class“std::vector<cv::KeyPoint,std::allocator<_Ty>>”需要有 dll 接口由 struct“Pattern”的客户端使用
+                 with
+                 [
+                     _Ty=cv::KeyPoint
+                 ]
+     1>c:\users\dell\documents\visual studio 2013\projects\ardll\ardll\Pattern.hpp(37): warning C4251: “Pattern::descriptors”: class“cv::Mat”需要有 dll 接口由 struct“Pattern”的客户端使用
+                 F:\opencv\build\include\opencv2/core/core.hpp(1690) : 参见“cv::Mat”的声明
+     1>c:\users\dell\documents\visual studio 2013\projects\ardll\ardll\Pattern.hpp(39): warning C4251: “Pattern::points2d”: class“std::vector<cv::Point2f,std::allocator<_Ty>>”需要有 dll 接口由 struct“Pattern”的客户端使用
+                 with
+                 [
+                     _Ty=cv::Point2f
+                 ]
+     1>c:\users\dell\documents\visual studio 2013\projects\ardll\ardll\Pattern.hpp(40): warning C4251: “Pattern::points3d”: class“std::vector<cv::Point3f,std::allocator<_Ty>>”需要有 dll 接口由 struct“Pattern”的客户端使用
+                 with
+                 [
+                     _Ty=cv::Point3f
+                 ]
+     1>c:\users\dell\documents\visual studio 2013\projects\ardll\ardll\Pattern.hpp(48): warning C4251: “PatternTrackingInfo::homography”: class“cv::Mat”需要有 dll 接口由 struct“PatternTrackingInfo”的客户端使用
+                 F:\opencv\build\include\opencv2/core/core.hpp(1690) : 参见“cv::Mat”的声明
+     1>c:\users\dell\documents\visual studio 2013\projects\ardll\ardll\Pattern.hpp(49): warning C4251: “PatternTrackingInfo::points2d”: class“std::vector<cv::Point2f,std::allocator<_Ty>>”需要有 dll 接口由 struct“PatternTrackingInfo”的客户端使用
+                 with
+                 [
+                     _Ty=cv::Point2f
+                 ]
+     1>c:\users\dell\documents\visual studio 2013\projects\ardll\ardll\PatternDetector.hpp(86): warning C4251: “PatternDetector::m_queryKeypoints”: class“std::vector<cv::KeyPoint,std::allocator<_Ty>>”需要有 dll 接口由 class“PatternDetector”的客户端使用
+                 with
+                 [
+                     _Ty=cv::KeyPoint
+                 ]
+     1>c:\users\dell\documents\visual studio 2013\projects\ardll\ardll\PatternDetector.hpp(87): warning C4251: “PatternDetector::m_queryDescriptors”: class“cv::Mat”需要有 dll 接口由 class“PatternDetector”的客户端使用
+                 F:\opencv\build\include\opencv2/core/core.hpp(1690) : 参见“cv::Mat”的声明
+     1>c:\users\dell\documents\visual studio 2013\projects\ardll\ardll\PatternDetector.hpp(88): warning C4251: “PatternDetector::m_matches”: class“std::vector<cv::DMatch,std::allocator<_Ty>>”需要有 dll 接口由 class“PatternDetector”的客户端使用
+                 with
+                 [
+                     _Ty=cv::DMatch
+                 ]
+     1>c:\users\dell\documents\visual studio 2013\projects\ardll\ardll\PatternDetector.hpp(89): warning C4251: “PatternDetector::m_knnMatches”: class“std::vector<std::vector<cv::DMatch,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>”需要有 dll 接口由 class“PatternDetector”的客户端使用
+                 with
+                 [
+                     _Ty=cv::DMatch
+                 ]
+     1>c:\users\dell\documents\visual studio 2013\projects\ardll\ardll\PatternDetector.hpp(91): warning C4251: “PatternDetector::m_grayImg”: class“cv::Mat”需要有 dll 接口由 class“PatternDetector”的客户端使用
+                 F:\opencv\build\include\opencv2/core/core.hpp(1690) : 参见“cv::Mat”的声明
+     1>c:\users\dell\documents\visual studio 2013\projects\ardll\ardll\PatternDetector.hpp(92): warning C4251: “PatternDetector::m_warpedImg”: class“cv::Mat”需要有 dll 接口由 class“PatternDetector”的客户端使用
+                 F:\opencv\build\include\opencv2/core/core.hpp(1690) : 参见“cv::Mat”的声明
+     1>c:\users\dell\documents\visual studio 2013\projects\ardll\ardll\PatternDetector.hpp(93): warning C4251: “PatternDetector::m_roughHomography”: class“cv::Mat”需要有 dll 接口由 class“PatternDetector”的客户端使用
+                 F:\opencv\build\include\opencv2/core/core.hpp(1690) : 参见“cv::Mat”的声明
+     1>c:\users\dell\documents\visual studio 2013\projects\ardll\ardll\PatternDetector.hpp(94): warning C4251: “PatternDetector::m_refinedHomography”: class“cv::Mat”需要有 dll 接口由 class“PatternDetector”的客户端使用
+                 F:\opencv\build\include\opencv2/core/core.hpp(1690) : 参见“cv::Mat”的声明
+     1>c:\users\dell\documents\visual studio 2013\projects\ardll\ardll\PatternDetector.hpp(97): warning C4251: “PatternDetector::m_detector”: class“cv::Ptr<cv::FeatureDetector>”需要有 dll 接口由 class“PatternDetector”的客户端使用
+     1>c:\users\dell\documents\visual studio 2013\projects\ardll\ardll\PatternDetector.hpp(98): warning C4251: “PatternDetector::m_extractor”: class“cv::Ptr<cv::DescriptorExtractor>”需要有 dll 接口由 class“PatternDetector”的客户端使用
+     1>c:\users\dell\documents\visual studio 2013\projects\ardll\ardll\PatternDetector.hpp(99): warning C4251: “PatternDetector::m_matcher”: class“cv::Ptr<cv::DescriptorMatcher>”需要有 dll 接口由 class“PatternDetector”的客户端使用
+     1>c:\users\dell\documents\visual studio 2013\projects\ardll\ardll\maintest.hpp(12): warning C4190: “ARPipeline_getPatternLocation”有指定的 C 链接，但返回了与 C 不兼容的 UDT“Transformation”
+                 c:\users\dell\documents\visual studio 2013\projects\ardll\ardll\GeometryTypes.hpp(59) : 参见“Transformation”的声明
+         GeometryTypes.cpp
+     1>GeometryTypes.cpp(34): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+     1>GeometryTypes.cpp(63): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+         CameraCalibration.cpp
+     1>c:\users\dell\documents\visual studio 2013\projects\ardll\ardll\CameraCalibration.hpp(52): warning C4251: “CameraCalibration::m_intrinsic”: class“cv::Matx<float,3,3>”需要有 dll 接口由 class“CameraCalibration”的客户端使用
+     1>c:\users\dell\documents\visual studio 2013\projects\ardll\ardll\CameraCalibration.hpp(53): warning C4251: “CameraCalibration::m_distortion”: class“cv::Mat_<float>”需要有 dll 接口由 class“CameraCalibration”的客户端使用
+         ARPipeline.cpp
+     1>c:\users\dell\documents\visual studio 2013\projects\ardll\ardll\CameraCalibration.hpp(52): warning C4251: “CameraCalibration::m_intrinsic”: class“cv::Matx<float,3,3>”需要有 dll 接口由 class“CameraCalibration”的客户端使用
+     1>c:\users\dell\documents\visual studio 2013\projects\ardll\ardll\CameraCalibration.hpp(53): warning C4251: “CameraCalibration::m_distortion”: class“cv::Mat_<float>”需要有 dll 接口由 class“CameraCalibration”的客户端使用
+     1>c:\users\dell\documents\visual studio 2013\projects\ardll\ardll\Pattern.hpp(32): warning C4251: “Pattern::size”: class“cv::Size_<int>”需要有 dll 接口由 struct“Pattern”的客户端使用
+     1>c:\users\dell\documents\visual studio 2013\projects\ardll\ardll\Pattern.hpp(33): warning C4251: “Pattern::frame”: class“cv::Mat”需要有 dll 接口由 struct“Pattern”的客户端使用
+                 F:\opencv\build\include\opencv2/core/core.hpp(1690) : 参见“cv::Mat”的声明
+     1>c:\users\dell\documents\visual studio 2013\projects\ardll\ardll\Pattern.hpp(34): warning C4251: “Pattern::grayImg”: class“cv::Mat”需要有 dll 接口由 struct“Pattern”的客户端使用
+                 F:\opencv\build\include\opencv2/core/core.hpp(1690) : 参见“cv::Mat”的声明
+     1>c:\users\dell\documents\visual studio 2013\projects\ardll\ardll\Pattern.hpp(36): warning C4251: “Pattern::keypoints”: class“std::vector<cv::KeyPoint,std::allocator<_Ty>>”需要有 dll 接口由 struct“Pattern”的客户端使用
+                 with
+                 [
+                     _Ty=cv::KeyPoint
+                 ]
+     1>c:\users\dell\documents\visual studio 2013\projects\ardll\ardll\Pattern.hpp(37): warning C4251: “Pattern::descriptors”: class“cv::Mat”需要有 dll 接口由 struct“Pattern”的客户端使用
+                 F:\opencv\build\include\opencv2/core/core.hpp(1690) : 参见“cv::Mat”的声明
+     1>c:\users\dell\documents\visual studio 2013\projects\ardll\ardll\Pattern.hpp(39): warning C4251: “Pattern::points2d”: class“std::vector<cv::Point2f,std::allocator<_Ty>>”需要有 dll 接口由 struct“Pattern”的客户端使用
+                 with
+                 [
+                     _Ty=cv::Point2f
+                 ]
+     1>c:\users\dell\documents\visual studio 2013\projects\ardll\ardll\Pattern.hpp(40): warning C4251: “Pattern::points3d”: class“std::vector<cv::Point3f,std::allocator<_Ty>>”需要有 dll 接口由 struct“Pattern”的客户端使用
+                 with
+                 [
+                     _Ty=cv::Point3f
+                 ]
+     1>c:\users\dell\documents\visual studio 2013\projects\ardll\ardll\Pattern.hpp(48): warning C4251: “PatternTrackingInfo::homography”: class“cv::Mat”需要有 dll 接口由 struct“PatternTrackingInfo”的客户端使用
+                 F:\opencv\build\include\opencv2/core/core.hpp(1690) : 参见“cv::Mat”的声明
+     1>c:\users\dell\documents\visual studio 2013\projects\ardll\ardll\Pattern.hpp(49): warning C4251: “PatternTrackingInfo::points2d”: class“std::vector<cv::Point2f,std::allocator<_Ty>>”需要有 dll 接口由 struct“PatternTrackingInfo”的客户端使用
+                 with
+                 [
+                     _Ty=cv::Point2f
+                 ]
+     1>c:\users\dell\documents\visual studio 2013\projects\ardll\ardll\PatternDetector.hpp(86): warning C4251: “PatternDetector::m_queryKeypoints”: class“std::vector<cv::KeyPoint,std::allocator<_Ty>>”需要有 dll 接口由 class“PatternDetector”的客户端使用
+                 with
+                 [
+                     _Ty=cv::KeyPoint
+                 ]
+     1>c:\users\dell\documents\visual studio 2013\projects\ardll\ardll\PatternDetector.hpp(87): warning C4251: “PatternDetector::m_queryDescriptors”: class“cv::Mat”需要有 dll 接口由 class“PatternDetector”的客户端使用
+                 F:\opencv\build\include\opencv2/core/core.hpp(1690) : 参见“cv::Mat”的声明
+     1>c:\users\dell\documents\visual studio 2013\projects\ardll\ardll\PatternDetector.hpp(88): warning C4251: “PatternDetector::m_matches”: class“std::vector<cv::DMatch,std::allocator<_Ty>>”需要有 dll 接口由 class“PatternDetector”的客户端使用
+                 with
+                 [
+                     _Ty=cv::DMatch
+                 ]
+     1>c:\users\dell\documents\visual studio 2013\projects\ardll\ardll\PatternDetector.hpp(89): warning C4251: “PatternDetector::m_knnMatches”: class“std::vector<std::vector<cv::DMatch,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>”需要有 dll 接口由 class“PatternDetector”的客户端使用
+                 with
+                 [
+                     _Ty=cv::DMatch
+                 ]
+     1>c:\users\dell\documents\visual studio 2013\projects\ardll\ardll\PatternDetector.hpp(91): warning C4251: “PatternDetector::m_grayImg”: class“cv::Mat”需要有 dll 接口由 class“PatternDetector”的客户端使用
+                 F:\opencv\build\include\opencv2/core/core.hpp(1690) : 参见“cv::Mat”的声明
+     1>c:\users\dell\documents\visual studio 2013\projects\ardll\ardll\PatternDetector.hpp(92): warning C4251: “PatternDetector::m_warpedImg”: class“cv::Mat”需要有 dll 接口由 class“PatternDetector”的客户端使用
+                 F:\opencv\build\include\opencv2/core/core.hpp(1690) : 参见“cv::Mat”的声明
+     1>c:\users\dell\documents\visual studio 2013\projects\ardll\ardll\PatternDetector.hpp(93): warning C4251: “PatternDetector::m_roughHomography”: class“cv::Mat”需要有 dll 接口由 class“PatternDetector”的客户端使用
+                 F:\opencv\build\include\opencv2/core/core.hpp(1690) : 参见“cv::Mat”的声明
+     1>c:\users\dell\documents\visual studio 2013\projects\ardll\ardll\PatternDetector.hpp(94): warning C4251: “PatternDetector::m_refinedHomography”: class“cv::Mat”需要有 dll 接口由 class“PatternDetector”的客户端使用
+                 F:\opencv\build\include\opencv2/core/core.hpp(1690) : 参见“cv::Mat”的声明
+     1>c:\users\dell\documents\visual studio 2013\projects\ardll\ardll\PatternDetector.hpp(97): warning C4251: “PatternDetector::m_detector”: class“cv::Ptr<cv::FeatureDetector>”需要有 dll 接口由 class“PatternDetector”的客户端使用
+     1>c:\users\dell\documents\visual studio 2013\projects\ardll\ardll\PatternDetector.hpp(98): warning C4251: “PatternDetector::m_extractor”: class“cv::Ptr<cv::DescriptorExtractor>”需要有 dll 接口由 class“PatternDetector”的客户端使用
+     1>c:\users\dell\documents\visual studio 2013\projects\ardll\ardll\PatternDetector.hpp(99): warning C4251: “PatternDetector::m_matcher”: class“cv::Ptr<cv::DescriptorMatcher>”需要有 dll 接口由 class“PatternDetector”的客户端使用
+         正在生成代码...
+       Link:
+         E:\visual studio 2013 破解版\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\DELL\Documents\Visual Studio 2013\Projects\ARDLL\x64\Debug\ARDLL.dll" /INCREMENTAL /NOLOGO msvcrt.lib opencv_objdetect2410d.lib opencv_ts2410d.lib opencv_video2410d.lib opencv_nonfree2410d.lib opencv_ocl2410d.lib opencv_photo2410d.lib opencv_stitching2410d.lib opencv_superres2410d.lib opencv_videostab2410d.lib opencv_calib3d2410d.lib opencv_contrib2410d.lib opencv_core2410d.lib opencv_features2d2410d.lib opencv_flann2410d.lib opencv_gpu2410d.lib opencv_highgui2410d.lib opencv_imgproc2410d.lib opencv_legacy2410d.lib opencv_ml2410d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\DELL\Documents\Visual Studio 2013\Projects\ARDLL\x64\Debug\ARDLL.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\DELL\Documents\Visual Studio 2013\Projects\ARDLL\x64\Debug\ARDLL.lib" /MACHINE:X64 /DLL x64\Debug\ARPipeline.obj
+         x64\Debug\CameraCalibration.obj
+         x64\Debug\GeometryTypes.obj
+         x64\Debug\maintest.obj
+         x64\Debug\Pattern.obj
+         x64\Debug\PatternDetector.obj
+            正在创建库 C:\Users\DELL\Documents\Visual Studio 2013\Projects\ARDLL\x64\Debug\ARDLL.lib 和对象 C:\Users\DELL\Documents\Visual Studio 2013\Projects\ARDLL\x64\Debug\ARDLL.exp
+     1>LINK : warning LNK4098: 默认库“MSVCRTD”与其他库的使用冲突；请使用 /NODEFAULTLIB:library
+         ARDLL.vcxproj -> C:\Users\DELL\Documents\Visual Studio 2013\Projects\ARDLL\x64\Debug\ARDLL.dll
+     1>已完成生成项目“C:\Users\DELL\Documents\Visual Studio 2013\Projects\ARDLL\ARDLL\ARDLL.vcxproj”(Rebuild 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:10.03

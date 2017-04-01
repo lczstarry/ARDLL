@@ -1,0 +1,7 @@
+﻿  MyController.cpp
+     Creating library C:\Users\The Sun\Desktop\My_DLL_13\x64\Release\My_DLL_13.lib and object C:\Users\The Sun\Desktop\My_DLL_13\x64\Release\My_DLL_13.exp
+  Generating code
+c:\users\the sun\desktop\my_dll_13\my_dll_13\mycontroller.cpp(144): warning C4715: 'MyController::best_Match' : not all control paths return a value
+c:\users\the sun\desktop\my_dll_13\my_dll_13\mycontroller.cpp(281): warning C4715: 'MyController::Homography' : not all control paths return a value
+  Finished generating code
+  My_DLL_13.vcxproj -> C:\Users\The Sun\Desktop\My_DLL_13\x64\Release\My_DLL_13.dll

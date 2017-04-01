@@ -1,0 +1,21 @@
+﻿生成启动时间为 2016/12/29 11:25:08。
+     1>项目“C:\Users\DELL\Desktop\My_DLL_13\My_DLL_13\My_DLL_13.vcxproj”在节点 2 上(Rebuild 个目标)。
+     1>ClCompile:
+         E:\visual studio 2013 破解版\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _USRDLL /D MY_DLL_13_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"x64\Release\My_DLL_13.pch" /Fo"x64\Release\\" /Fd"x64\Release\vc120.pdb" /Gd /TP /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         E:\visual studio 2013 破解版\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _USRDLL /D MY_DLL_13_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"x64\Release\My_DLL_13.pch" /Fo"x64\Release\\" /Fd"x64\Release\vc120.pdb" /Gd /TP /errorReport:prompt Camera.cpp Feature.cpp Logger.cpp MyController.cpp My_DLL_13.cpp My_Function.cpp
+         Camera.cpp
+     1>Camera.cpp(12): error C2039: “makePtr”: 不是“cv”的成员
+     1>Camera.cpp(12): error C2065: “makePtr”: 未声明的标识符
+     1>Camera.cpp(12): error C2275: “cv::VideoCapture”: 将此类型用作表达式非法
+     1>Camera.cpp(12): error C2059: 语法错误:“)”
+         Feature.cpp
+         Logger.cpp
+         MyController.cpp
+         My_DLL_13.cpp
+         My_Function.cpp
+     1>已完成生成项目“C:\Users\DELL\Desktop\My_DLL_13\My_DLL_13\My_DLL_13.vcxproj”(Rebuild 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:05.62

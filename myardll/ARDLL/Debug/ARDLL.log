@@ -1,0 +1,224 @@
+﻿生成启动时间为 2016/12/11 14:24:44。
+     1>项目“C:\Users\DELL\documents\visual studio 2013\Projects\ARDLL\ARDLL\ARDLL.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         E:\visual studio 2013 破解版\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D ARDLL_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\..\..\..\Desktop\src\ARPipeline.cpp ..\..\..\..\..\Desktop\src\CameraCalibration.cpp ..\..\..\..\..\Desktop\src\GeometryTypes.cpp ..\..\..\..\..\Desktop\src\Pattern.cpp ..\..\..\..\..\Desktop\src\PatternDetector.cpp maintest.cpp
+         maintest.cpp
+     1>c:\users\dell\documents\visual studio 2013\projects\ardll\ardll\maintest.cpp(3): fatal error C1083: 无法打开包括文件: “ARPipeline.hpp”: No such file or directory
+         正在生成代码...
+         正在编译...
+         ARPipeline.cpp
+     1>c:\users\dell\desktop\src\geometrytypes.hpp(30): error C2526: “Matrix44::identity”: C 链接函数无法返回 C++ 类“Matrix44”
+                 c:\users\dell\desktop\src\geometrytypes.hpp(21) : 参见“Matrix44”的声明
+     1>c:\users\dell\desktop\src\geometrytypes.hpp(41): error C2526: “Matrix33::identity”: C 链接函数无法返回 C++ 类“Matrix33”
+                 c:\users\dell\desktop\src\geometrytypes.hpp(34) : 参见“Matrix33”的声明
+     1>c:\users\dell\desktop\src\geometrytypes.hpp(54): error C2526: “Vector3::zero”: C 链接函数无法返回 C++ 类“Vector3”
+                 c:\users\dell\desktop\src\geometrytypes.hpp(51) : 参见“Vector3”的声明
+     1>c:\users\dell\desktop\src\cameracalibration.hpp(52): warning C4251: “CameraCalibration::m_intrinsic”: class“cv::Matx<float,3,3>”需要有 dll 接口由 class“CameraCalibration”的客户端使用
+     1>c:\users\dell\desktop\src\cameracalibration.hpp(53): warning C4251: “CameraCalibration::m_distortion”: class“cv::Mat_<float>”需要有 dll 接口由 class“CameraCalibration”的客户端使用
+     1>c:\users\dell\desktop\src\pattern.hpp(32): warning C4251: “Pattern::size”: class“cv::Size_<int>”需要有 dll 接口由 struct“Pattern”的客户端使用
+     1>c:\users\dell\desktop\src\pattern.hpp(33): warning C4251: “Pattern::frame”: class“cv::Mat”需要有 dll 接口由 struct“Pattern”的客户端使用
+                 f:\opencv\opencvbuild\install\include\opencv2\core\core.hpp(1690) : 参见“cv::Mat”的声明
+     1>c:\users\dell\desktop\src\pattern.hpp(34): warning C4251: “Pattern::grayImg”: class“cv::Mat”需要有 dll 接口由 struct“Pattern”的客户端使用
+                 f:\opencv\opencvbuild\install\include\opencv2\core\core.hpp(1690) : 参见“cv::Mat”的声明
+     1>c:\users\dell\desktop\src\pattern.hpp(36): warning C4251: “Pattern::keypoints”: class“std::vector<cv::KeyPoint,std::allocator<_Ty>>”需要有 dll 接口由 struct“Pattern”的客户端使用
+                 with
+                 [
+                     _Ty=cv::KeyPoint
+                 ]
+     1>c:\users\dell\desktop\src\pattern.hpp(37): warning C4251: “Pattern::descriptors”: class“cv::Mat”需要有 dll 接口由 struct“Pattern”的客户端使用
+                 f:\opencv\opencvbuild\install\include\opencv2\core\core.hpp(1690) : 参见“cv::Mat”的声明
+     1>c:\users\dell\desktop\src\pattern.hpp(39): warning C4251: “Pattern::points2d”: class“std::vector<cv::Point2f,std::allocator<_Ty>>”需要有 dll 接口由 struct“Pattern”的客户端使用
+                 with
+                 [
+                     _Ty=cv::Point2f
+                 ]
+     1>c:\users\dell\desktop\src\pattern.hpp(40): warning C4251: “Pattern::points3d”: class“std::vector<cv::Point3f,std::allocator<_Ty>>”需要有 dll 接口由 struct“Pattern”的客户端使用
+                 with
+                 [
+                     _Ty=cv::Point3f
+                 ]
+     1>c:\users\dell\desktop\src\pattern.hpp(48): warning C4251: “PatternTrackingInfo::homography”: class“cv::Mat”需要有 dll 接口由 struct“PatternTrackingInfo”的客户端使用
+                 f:\opencv\opencvbuild\install\include\opencv2\core\core.hpp(1690) : 参见“cv::Mat”的声明
+     1>c:\users\dell\desktop\src\pattern.hpp(49): warning C4251: “PatternTrackingInfo::points2d”: class“std::vector<cv::Point2f,std::allocator<_Ty>>”需要有 dll 接口由 struct“PatternTrackingInfo”的客户端使用
+                 with
+                 [
+                     _Ty=cv::Point2f
+                 ]
+     1>c:\users\dell\desktop\src\patterndetector.hpp(86): warning C4251: “PatternDetector::m_queryKeypoints”: class“std::vector<cv::KeyPoint,std::allocator<_Ty>>”需要有 dll 接口由 class“PatternDetector”的客户端使用
+                 with
+                 [
+                     _Ty=cv::KeyPoint
+                 ]
+     1>c:\users\dell\desktop\src\patterndetector.hpp(87): warning C4251: “PatternDetector::m_queryDescriptors”: class“cv::Mat”需要有 dll 接口由 class“PatternDetector”的客户端使用
+                 f:\opencv\opencvbuild\install\include\opencv2\core\core.hpp(1690) : 参见“cv::Mat”的声明
+     1>c:\users\dell\desktop\src\patterndetector.hpp(88): warning C4251: “PatternDetector::m_matches”: class“std::vector<cv::DMatch,std::allocator<_Ty>>”需要有 dll 接口由 class“PatternDetector”的客户端使用
+                 with
+                 [
+                     _Ty=cv::DMatch
+                 ]
+     1>c:\users\dell\desktop\src\patterndetector.hpp(89): warning C4251: “PatternDetector::m_knnMatches”: class“std::vector<std::vector<cv::DMatch,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>”需要有 dll 接口由 class“PatternDetector”的客户端使用
+                 with
+                 [
+                     _Ty=cv::DMatch
+                 ]
+     1>c:\users\dell\desktop\src\patterndetector.hpp(91): warning C4251: “PatternDetector::m_grayImg”: class“cv::Mat”需要有 dll 接口由 class“PatternDetector”的客户端使用
+                 f:\opencv\opencvbuild\install\include\opencv2\core\core.hpp(1690) : 参见“cv::Mat”的声明
+     1>c:\users\dell\desktop\src\patterndetector.hpp(92): warning C4251: “PatternDetector::m_warpedImg”: class“cv::Mat”需要有 dll 接口由 class“PatternDetector”的客户端使用
+                 f:\opencv\opencvbuild\install\include\opencv2\core\core.hpp(1690) : 参见“cv::Mat”的声明
+     1>c:\users\dell\desktop\src\patterndetector.hpp(93): warning C4251: “PatternDetector::m_roughHomography”: class“cv::Mat”需要有 dll 接口由 class“PatternDetector”的客户端使用
+                 f:\opencv\opencvbuild\install\include\opencv2\core\core.hpp(1690) : 参见“cv::Mat”的声明
+     1>c:\users\dell\desktop\src\patterndetector.hpp(94): warning C4251: “PatternDetector::m_refinedHomography”: class“cv::Mat”需要有 dll 接口由 class“PatternDetector”的客户端使用
+                 f:\opencv\opencvbuild\install\include\opencv2\core\core.hpp(1690) : 参见“cv::Mat”的声明
+     1>c:\users\dell\desktop\src\patterndetector.hpp(97): warning C4251: “PatternDetector::m_detector”: class“cv::Ptr<cv::FeatureDetector>”需要有 dll 接口由 class“PatternDetector”的客户端使用
+     1>c:\users\dell\desktop\src\patterndetector.hpp(98): warning C4251: “PatternDetector::m_extractor”: class“cv::Ptr<cv::DescriptorExtractor>”需要有 dll 接口由 class“PatternDetector”的客户端使用
+     1>c:\users\dell\desktop\src\patterndetector.hpp(99): warning C4251: “PatternDetector::m_matcher”: class“cv::Ptr<cv::DescriptorMatcher>”需要有 dll 接口由 class“PatternDetector”的客户端使用
+         正在生成代码...
+         正在编译...
+         CameraCalibration.cpp
+     1>c:\users\dell\desktop\src\cameracalibration.hpp(52): warning C4251: “CameraCalibration::m_intrinsic”: class“cv::Matx<float,3,3>”需要有 dll 接口由 class“CameraCalibration”的客户端使用
+     1>c:\users\dell\desktop\src\cameracalibration.hpp(53): warning C4251: “CameraCalibration::m_distortion”: class“cv::Mat_<float>”需要有 dll 接口由 class“CameraCalibration”的客户端使用
+         正在生成代码...
+         正在编译...
+         PatternDetector.cpp
+     1>c:\users\dell\desktop\src\geometrytypes.hpp(30): error C2526: “Matrix44::identity”: C 链接函数无法返回 C++ 类“Matrix44”
+                 c:\users\dell\desktop\src\geometrytypes.hpp(21) : 参见“Matrix44”的声明
+     1>c:\users\dell\desktop\src\geometrytypes.hpp(41): error C2526: “Matrix33::identity”: C 链接函数无法返回 C++ 类“Matrix33”
+                 c:\users\dell\desktop\src\geometrytypes.hpp(34) : 参见“Matrix33”的声明
+     1>c:\users\dell\desktop\src\geometrytypes.hpp(54): error C2526: “Vector3::zero”: C 链接函数无法返回 C++ 类“Vector3”
+                 c:\users\dell\desktop\src\geometrytypes.hpp(51) : 参见“Vector3”的声明
+     1>c:\users\dell\desktop\src\cameracalibration.hpp(52): warning C4251: “CameraCalibration::m_intrinsic”: class“cv::Matx<float,3,3>”需要有 dll 接口由 class“CameraCalibration”的客户端使用
+     1>c:\users\dell\desktop\src\cameracalibration.hpp(53): warning C4251: “CameraCalibration::m_distortion”: class“cv::Mat_<float>”需要有 dll 接口由 class“CameraCalibration”的客户端使用
+     1>c:\users\dell\desktop\src\pattern.hpp(32): warning C4251: “Pattern::size”: class“cv::Size_<int>”需要有 dll 接口由 struct“Pattern”的客户端使用
+     1>c:\users\dell\desktop\src\pattern.hpp(33): warning C4251: “Pattern::frame”: class“cv::Mat”需要有 dll 接口由 struct“Pattern”的客户端使用
+                 f:\opencv\opencvbuild\install\include\opencv2\core\core.hpp(1690) : 参见“cv::Mat”的声明
+     1>c:\users\dell\desktop\src\pattern.hpp(34): warning C4251: “Pattern::grayImg”: class“cv::Mat”需要有 dll 接口由 struct“Pattern”的客户端使用
+                 f:\opencv\opencvbuild\install\include\opencv2\core\core.hpp(1690) : 参见“cv::Mat”的声明
+     1>c:\users\dell\desktop\src\pattern.hpp(36): warning C4251: “Pattern::keypoints”: class“std::vector<cv::KeyPoint,std::allocator<_Ty>>”需要有 dll 接口由 struct“Pattern”的客户端使用
+                 with
+                 [
+                     _Ty=cv::KeyPoint
+                 ]
+     1>c:\users\dell\desktop\src\pattern.hpp(37): warning C4251: “Pattern::descriptors”: class“cv::Mat”需要有 dll 接口由 struct“Pattern”的客户端使用
+                 f:\opencv\opencvbuild\install\include\opencv2\core\core.hpp(1690) : 参见“cv::Mat”的声明
+     1>c:\users\dell\desktop\src\pattern.hpp(39): warning C4251: “Pattern::points2d”: class“std::vector<cv::Point2f,std::allocator<_Ty>>”需要有 dll 接口由 struct“Pattern”的客户端使用
+                 with
+                 [
+                     _Ty=cv::Point2f
+                 ]
+     1>c:\users\dell\desktop\src\pattern.hpp(40): warning C4251: “Pattern::points3d”: class“std::vector<cv::Point3f,std::allocator<_Ty>>”需要有 dll 接口由 struct“Pattern”的客户端使用
+                 with
+                 [
+                     _Ty=cv::Point3f
+                 ]
+     1>c:\users\dell\desktop\src\pattern.hpp(48): warning C4251: “PatternTrackingInfo::homography”: class“cv::Mat”需要有 dll 接口由 struct“PatternTrackingInfo”的客户端使用
+                 f:\opencv\opencvbuild\install\include\opencv2\core\core.hpp(1690) : 参见“cv::Mat”的声明
+     1>c:\users\dell\desktop\src\pattern.hpp(49): warning C4251: “PatternTrackingInfo::points2d”: class“std::vector<cv::Point2f,std::allocator<_Ty>>”需要有 dll 接口由 struct“PatternTrackingInfo”的客户端使用
+                 with
+                 [
+                     _Ty=cv::Point2f
+                 ]
+     1>c:\users\dell\desktop\src\patterndetector.hpp(86): warning C4251: “PatternDetector::m_queryKeypoints”: class“std::vector<cv::KeyPoint,std::allocator<_Ty>>”需要有 dll 接口由 class“PatternDetector”的客户端使用
+                 with
+                 [
+                     _Ty=cv::KeyPoint
+                 ]
+     1>c:\users\dell\desktop\src\patterndetector.hpp(87): warning C4251: “PatternDetector::m_queryDescriptors”: class“cv::Mat”需要有 dll 接口由 class“PatternDetector”的客户端使用
+                 f:\opencv\opencvbuild\install\include\opencv2\core\core.hpp(1690) : 参见“cv::Mat”的声明
+     1>c:\users\dell\desktop\src\patterndetector.hpp(88): warning C4251: “PatternDetector::m_matches”: class“std::vector<cv::DMatch,std::allocator<_Ty>>”需要有 dll 接口由 class“PatternDetector”的客户端使用
+                 with
+                 [
+                     _Ty=cv::DMatch
+                 ]
+     1>c:\users\dell\desktop\src\patterndetector.hpp(89): warning C4251: “PatternDetector::m_knnMatches”: class“std::vector<std::vector<cv::DMatch,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>”需要有 dll 接口由 class“PatternDetector”的客户端使用
+                 with
+                 [
+                     _Ty=cv::DMatch
+                 ]
+     1>c:\users\dell\desktop\src\patterndetector.hpp(91): warning C4251: “PatternDetector::m_grayImg”: class“cv::Mat”需要有 dll 接口由 class“PatternDetector”的客户端使用
+                 f:\opencv\opencvbuild\install\include\opencv2\core\core.hpp(1690) : 参见“cv::Mat”的声明
+     1>c:\users\dell\desktop\src\patterndetector.hpp(92): warning C4251: “PatternDetector::m_warpedImg”: class“cv::Mat”需要有 dll 接口由 class“PatternDetector”的客户端使用
+                 f:\opencv\opencvbuild\install\include\opencv2\core\core.hpp(1690) : 参见“cv::Mat”的声明
+     1>c:\users\dell\desktop\src\patterndetector.hpp(93): warning C4251: “PatternDetector::m_roughHomography”: class“cv::Mat”需要有 dll 接口由 class“PatternDetector”的客户端使用
+                 f:\opencv\opencvbuild\install\include\opencv2\core\core.hpp(1690) : 参见“cv::Mat”的声明
+     1>c:\users\dell\desktop\src\patterndetector.hpp(94): warning C4251: “PatternDetector::m_refinedHomography”: class“cv::Mat”需要有 dll 接口由 class“PatternDetector”的客户端使用
+                 f:\opencv\opencvbuild\install\include\opencv2\core\core.hpp(1690) : 参见“cv::Mat”的声明
+     1>c:\users\dell\desktop\src\patterndetector.hpp(97): warning C4251: “PatternDetector::m_detector”: class“cv::Ptr<cv::FeatureDetector>”需要有 dll 接口由 class“PatternDetector”的客户端使用
+     1>c:\users\dell\desktop\src\patterndetector.hpp(98): warning C4251: “PatternDetector::m_extractor”: class“cv::Ptr<cv::DescriptorExtractor>”需要有 dll 接口由 class“PatternDetector”的客户端使用
+     1>c:\users\dell\desktop\src\patterndetector.hpp(99): warning C4251: “PatternDetector::m_matcher”: class“cv::Ptr<cv::DescriptorMatcher>”需要有 dll 接口由 class“PatternDetector”的客户端使用
+     1>c:\users\dell\desktop\src\patterndetector.cpp(63): warning C4244: “初始化”: 从“const int”转换到“const float”，可能丢失数据
+     1>c:\users\dell\desktop\src\patterndetector.cpp(64): warning C4244: “初始化”: 从“const int”转换到“const float”，可能丢失数据
+         Pattern.cpp
+     1>c:\users\dell\desktop\src\geometrytypes.hpp(30): error C2526: “Matrix44::identity”: C 链接函数无法返回 C++ 类“Matrix44”
+                 c:\users\dell\desktop\src\geometrytypes.hpp(21) : 参见“Matrix44”的声明
+     1>c:\users\dell\desktop\src\geometrytypes.hpp(41): error C2526: “Matrix33::identity”: C 链接函数无法返回 C++ 类“Matrix33”
+                 c:\users\dell\desktop\src\geometrytypes.hpp(34) : 参见“Matrix33”的声明
+     1>c:\users\dell\desktop\src\geometrytypes.hpp(54): error C2526: “Vector3::zero”: C 链接函数无法返回 C++ 类“Vector3”
+                 c:\users\dell\desktop\src\geometrytypes.hpp(51) : 参见“Vector3”的声明
+     1>c:\users\dell\desktop\src\cameracalibration.hpp(52): warning C4251: “CameraCalibration::m_intrinsic”: class“cv::Matx<float,3,3>”需要有 dll 接口由 class“CameraCalibration”的客户端使用
+     1>c:\users\dell\desktop\src\cameracalibration.hpp(53): warning C4251: “CameraCalibration::m_distortion”: class“cv::Mat_<float>”需要有 dll 接口由 class“CameraCalibration”的客户端使用
+     1>c:\users\dell\desktop\src\pattern.hpp(32): warning C4251: “Pattern::size”: class“cv::Size_<int>”需要有 dll 接口由 struct“Pattern”的客户端使用
+     1>c:\users\dell\desktop\src\pattern.hpp(33): warning C4251: “Pattern::frame”: class“cv::Mat”需要有 dll 接口由 struct“Pattern”的客户端使用
+                 f:\opencv\opencvbuild\install\include\opencv2\core\core.hpp(1690) : 参见“cv::Mat”的声明
+     1>c:\users\dell\desktop\src\pattern.hpp(34): warning C4251: “Pattern::grayImg”: class“cv::Mat”需要有 dll 接口由 struct“Pattern”的客户端使用
+                 f:\opencv\opencvbuild\install\include\opencv2\core\core.hpp(1690) : 参见“cv::Mat”的声明
+     1>c:\users\dell\desktop\src\pattern.hpp(36): warning C4251: “Pattern::keypoints”: class“std::vector<cv::KeyPoint,std::allocator<_Ty>>”需要有 dll 接口由 struct“Pattern”的客户端使用
+                 with
+                 [
+                     _Ty=cv::KeyPoint
+                 ]
+     1>c:\users\dell\desktop\src\pattern.hpp(37): warning C4251: “Pattern::descriptors”: class“cv::Mat”需要有 dll 接口由 struct“Pattern”的客户端使用
+                 f:\opencv\opencvbuild\install\include\opencv2\core\core.hpp(1690) : 参见“cv::Mat”的声明
+     1>c:\users\dell\desktop\src\pattern.hpp(39): warning C4251: “Pattern::points2d”: class“std::vector<cv::Point2f,std::allocator<_Ty>>”需要有 dll 接口由 struct“Pattern”的客户端使用
+                 with
+                 [
+                     _Ty=cv::Point2f
+                 ]
+     1>c:\users\dell\desktop\src\pattern.hpp(40): warning C4251: “Pattern::points3d”: class“std::vector<cv::Point3f,std::allocator<_Ty>>”需要有 dll 接口由 struct“Pattern”的客户端使用
+                 with
+                 [
+                     _Ty=cv::Point3f
+                 ]
+     1>c:\users\dell\desktop\src\pattern.hpp(48): warning C4251: “PatternTrackingInfo::homography”: class“cv::Mat”需要有 dll 接口由 struct“PatternTrackingInfo”的客户端使用
+                 f:\opencv\opencvbuild\install\include\opencv2\core\core.hpp(1690) : 参见“cv::Mat”的声明
+     1>c:\users\dell\desktop\src\pattern.hpp(49): warning C4251: “PatternTrackingInfo::points2d”: class“std::vector<cv::Point2f,std::allocator<_Ty>>”需要有 dll 接口由 struct“PatternTrackingInfo”的客户端使用
+                 with
+                 [
+                     _Ty=cv::Point2f
+                 ]
+         正在生成代码...
+         正在编译...
+         GeometryTypes.cpp
+     1>c:\users\dell\desktop\src\geometrytypes.hpp(30): error C2526: “Matrix44::identity”: C 链接函数无法返回 C++ 类“Matrix44”
+                 c:\users\dell\desktop\src\geometrytypes.hpp(21) : 参见“Matrix44”的声明
+     1>c:\users\dell\desktop\src\geometrytypes.hpp(41): error C2526: “Matrix33::identity”: C 链接函数无法返回 C++ 类“Matrix33”
+                 c:\users\dell\desktop\src\geometrytypes.hpp(34) : 参见“Matrix33”的声明
+     1>c:\users\dell\desktop\src\geometrytypes.hpp(54): error C2526: “Vector3::zero”: C 链接函数无法返回 C++ 类“Vector3”
+                 c:\users\dell\desktop\src\geometrytypes.hpp(51) : 参见“Vector3”的声明
+     1>c:\users\dell\desktop\src\geometrytypes.cpp(29): error C2556: “Matrix44 Matrix44::identity(void)”: 重载函数与“void Matrix44::identity(void)”只是在返回类型上不同
+                 c:\users\dell\desktop\src\geometrytypes.hpp(30) : 参见“Matrix44::identity”的声明
+     1>c:\users\dell\desktop\src\geometrytypes.cpp(29): error C2371: “Matrix44::identity”: 重定义；不同的基类型
+                 c:\users\dell\desktop\src\geometrytypes.hpp(30) : 参见“Matrix44::identity”的声明
+     1>c:\users\dell\desktop\src\geometrytypes.cpp(34): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+     1>c:\users\dell\desktop\src\geometrytypes.cpp(58): error C2556: “Matrix33 Matrix33::identity(void)”: 重载函数与“void Matrix33::identity(void)”只是在返回类型上不同
+                 c:\users\dell\desktop\src\geometrytypes.hpp(41) : 参见“Matrix33::identity”的声明
+     1>c:\users\dell\desktop\src\geometrytypes.cpp(58): error C2371: “Matrix33::identity”: 重定义；不同的基类型
+                 c:\users\dell\desktop\src\geometrytypes.hpp(41) : 参见“Matrix33::identity”的声明
+     1>c:\users\dell\desktop\src\geometrytypes.cpp(63): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+     1>c:\users\dell\desktop\src\geometrytypes.cpp(80): error C2556: “Vector3 Vector3::zero(void)”: 重载函数与“void Vector3::zero(void)”只是在返回类型上不同
+                 c:\users\dell\desktop\src\geometrytypes.hpp(54) : 参见“Vector3::zero”的声明
+     1>c:\users\dell\desktop\src\geometrytypes.cpp(80): error C2371: “Vector3::zero”: 重定义；不同的基类型
+                 c:\users\dell\desktop\src\geometrytypes.hpp(54) : 参见“Vector3::zero”的声明
+     1>c:\users\dell\desktop\src\geometrytypes.cpp(94): error C2664: “Matrix33::Matrix33(const Matrix33 &)”: 无法将参数 1 从“void (__cdecl Matrix33::* )(void)”转换为“const Matrix33 &”
+                 原因如下:  无法从“void (__cdecl Matrix33::* )(void)”转换为“const Matrix33”
+                 无构造函数可以接受源类型，或构造函数重载决策不明确
+     1>c:\users\dell\desktop\src\geometrytypes.cpp(94): error C2664: “Vector3::Vector3(const Vector3 &)”: 无法将参数 1 从“void (__cdecl Vector3::* )(void)”转换为“const Vector3 &”
+                 原因如下:  无法从“void (__cdecl Vector3::* )(void)”转换为“const Vector3”
+                 无构造函数可以接受源类型，或构造函数重载决策不明确
+     1>c:\users\dell\desktop\src\geometrytypes.cpp(127): error C2440: “初始化”: 无法从“void (__cdecl Matrix44::* )(void)”转换为“Matrix44”
+                 无构造函数可以接受源类型，或构造函数重载决策不明确
+         正在生成代码...
+     1>已完成生成项目“C:\Users\DELL\documents\visual studio 2013\Projects\ARDLL\ARDLL\ARDLL.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:06.17
